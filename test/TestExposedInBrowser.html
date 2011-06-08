@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title></title>
+	<script src="../lib/query-validator.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		var missing = [];
+		['setWildcardCaseInsensitive',
+		 'setAlertUser',
+		  'doCheckLuceneQuery',
+		  'doCheckLuceneQueryValue',
+		  'removeEscapes',
+		  'checkAllowedCharacters',
+		  'checkAsterisk',
+		  'checkAmpersands',
+		  'checkCaret',
+		  'checkSquiggle',
+		  'checkExclamationMark',
+		  'checkQuestionMark',
+		  'checkParentheses',
+		  'checkPlusMinus',
+		  'checkANDORNOT',
+		  'checkQuotes',
+		  'checkColon'].forEach( function(name) {
+			if(typeof this[name] !== 'function'){
+				missing.push( name)
+			}
+			if( missing.length > 0 ){
+				throw "Missing: "+missing.join(', ')
+			}
+		  },this)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

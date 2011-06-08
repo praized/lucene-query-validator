@@ -18,4 +18,4 @@
       eval("exports['"+name+"']="+name+";")
   })
 
-})(typeof exports === 'undefined'? this['mymodule']={}: exports);
+})(typeof exports === 'undefined'? window: exports);
