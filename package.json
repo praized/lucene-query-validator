@@ -1,0 +1,17 @@
+{
+  "name":        "lucene-query-validator",
+  "description": "Kelvin Tan's Lucene Query Validator, wrapped for usage as a npm module",
+  "version":     "0.0.1",
+  "repository":  {},
+  "author":      "Francois Lafortune, @quickredfox (http://about.me/quickredfox)",
+  "main":        "./lib/query-validator.js",
+  "directories": {
+      "lib":"./lib"
+  },
+  "engines": {
+      "node": "*"
+  },
+  "publishConfig": {
+       "registry": "http://ndm-registry.iriscouch.com"
+   }
+}
