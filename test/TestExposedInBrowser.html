@@ -25,11 +25,14 @@
 		  'checkColon'].forEach( function(name) {
 			if(typeof this[name] !== 'function'){
 				missing.push( name)
-			}
-			if( missing.length > 0 ){
-				throw "Missing: "+missing.join(', ')
-			}
+			}			
 		  },this)
+			if( missing.length > 0 ){
+				document.write( "Missing: "+missing.join(', '))
+			}else{
+				document.write( "Passed!")
+			}
+		
 	</script>
 </head>
 <body>
